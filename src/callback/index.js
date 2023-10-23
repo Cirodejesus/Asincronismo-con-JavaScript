@@ -47,5 +47,17 @@ setTimeout(function() {
 function gretting(name) {
     console.log(`Hola ${name}`);
 }
+setTimeout(gretting, 2000, 'Oscar') 
 
-setTimeout(gretting, 2000, 'Oscar')
+
+//Ejemplo del playground
+function execCallback(callback) {
+    window.setTimeout(() => {
+      callback();
+    }, 5000);
+  }
+      console.log('Execute myFunc 2s after');
+
+
+
+ 
