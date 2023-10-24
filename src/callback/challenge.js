@@ -12,7 +12,7 @@ function fetchData(urlApi, callback) {
   let xhttp = new XMLHttpRequest();//Control del flujo del llamado
 
   xhttp.open('GET', urlApi, true);//conexión con nuesta API
-  xhttp.onreadystatechange, function(event) { //Escucha diferentes estados, que tiene la solicitud y con esto saber cuando esta disponible la información.
+  xhttp.onreadystatechange = function(event)  { //Escucha diferentes estados, que tiene la solicitud y con esto saber cuando esta disponible la información.
     if (xhttp.readyState === 4) {//Varios estados 0 No inicia, 1 Loading, 2 Ejecuta valor send, 3 Interactuando, 4 Completado la llamada.
       if(xhttp.status === 200) { //Validar valor 200 y es que ha sido correcta.
         callback(null, JSON.parse(xhttp.responseText));//dos valores uno como valor nulo y otro como transformación de la información. lo recibimos como texto y transformamos a objetos.
