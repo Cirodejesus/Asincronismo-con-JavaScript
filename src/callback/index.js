@@ -54,7 +54,7 @@ setTimeout(gretting, 2000, 'Oscar')
 function execCallback(callback) {
     window.setTimeout(() => {
       callback();
-    }, 5000);
+    }, 2000);
   }
       console.log('Execute myFunc 2s after');
 
