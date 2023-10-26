@@ -16,8 +16,8 @@ function postData(urlApi, data) {//por parametro la url de la API y la data que 
 }
 
 const data = {
-        "title": "New Product Course",
-        "price": 9999,
+        "title": "212",
+        "price": 212,
         "description": "A description",
         "categoryId": 1,
         "images": [
@@ -29,3 +29,5 @@ postData(`${API}/products`, data)//Uso de la function y llamada de la API
   .then(response => response.json())//ver que Responde el servidor cuando sucede de forma correta almacenar esta información.     
   .then(data => console.log(data));//Data que ya a sido tranformada. hacemos un log para mostar la data.
 
+ 
+  
